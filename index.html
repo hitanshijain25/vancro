@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VANCOR — Walk on History</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&family=Cormorant:wght@700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-ring"></div>
+
+ 
+  <nav>
+    <div class="nav-logo">Vancor</div>
+    <span class="nav-center">Est. 1924</span>
+    <ul class="nav-links">
+      <li><a href="#collection">Shop</a></li>
+      <li><a href="#craft">Atelier</a></li>
+      <li><a href="#">Archive</a></li>
+      <li><a href="#">Cart (0)</a></li>
+    </ul>
+  </nav>
+
+ 
+  <section class="hero">
+
+    <!-- Animated orb -->
+    <div class="dot-orb"><div class="dot-inner"></div></div>
+
+    <!-- Sine arc -->
+    <svg class="arc-svg" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg">
+      <path class="arc-path" d="M 80 300 C 180 300, 200 100, 350 200 S 530 320, 630 180" />
+    </svg>
+
+    <div class="shoe-wrap" id="shoeWrap">
+      <img src="image 1.png" alt="VANCOR Sneaker" />
+    </div>
+
+    <!-- Headline -->
+    <div class="headline">
+      <h1>Walk on<br>History.</h1>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-wrap">
+      <a class="cta" href="#collection">Explore Collection</a>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+  </section>
+
+ 
+  <section class="section-craft" id="craft">
+
+    <!-- Left: image -->
+    <div class="craft-image-col">
+      <img src="image 2.jpg" alt="Craftsmanship" />
+    </div>
+
+    <!-- Right: text -->
+    <div class="craft-text-col">
+      <p class="section-label">— The Atelier</p>
+
+      <h2 class="craft-heading">A century<br>of precision.</h2>
+
+      <p class="craft-body">
+        Each pair is handcrafted in our Florence atelier by master cordwainers
+        who have devoted their lives to the pursuit of perfection. From the
+        selection of full-grain calf leather to the final hand-burnish,
+        every step is guided by tradition and an obsession with detail.
+      </p>
+
+      <div class="craft-stat-row">
+        <div class="craft-stat">
+          <div class="stat-num" data-target="100" data-suffix="+">0+</div>
+          <div class="stat-label">Years of craft</div>
+        </div>
+        <div class="craft-stat">
+          <div class="stat-num" data-target="212" data-suffix="">0</div>
+          <div class="stat-label">Handmade steps</div>
+        </div>
+        <div class="craft-stat">
+          <div class="stat-num" data-target="8" data-suffix=" wks">0</div>
+          <div class="stat-label">Per pair</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <div class="section-marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <!-- Duplicated for seamless loop -->
+      <span>Walk on History</span>
+      <span class="dot-sep">◆</span>
+      <span>Florence Atelier</span>
+      <span class="dot-sep">◆</span>
+      <span>Est. 1924</span>
+      <span class="dot-sep">◆</span>
+      <span>Handcrafted Luxury</span>
+      <span class="dot-sep">◆</span>
+      <span>Walk on History</span>
+      <span class="dot-sep">◆</span>
+      <span>Florence Atelier</span>
+      <span class="dot-sep">◆</span>
+      <span>Est. 1924</span>
+      <span class="dot-sep">◆</span>
+      <span>Handcrafted Luxury</span>
+      <span class="dot-sep">◆</span>
+    </div>
+  </div>
+>
+  <section class="section-collection" id="collection">
+    <div class="collection-header">
+      <h2 class="collection-title">The Collection</h2>
+      <a class="collection-link" href="#">View all →</a>
+    </div>
+
+    <div class="collection-grid">
+
+      <div class="card">
+        <div class="card-image">
+          <img src="image3.jpg" alt="The Radiant" />
+        </div>
+        <div class="card-info">
+          <span class="card-name">The Radiant</span>
+          <span class="card-price">£ 890</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="image 4.jpg" alt="The Scout" />
+        </div>
+        <div class="card-info">
+          <span class="card-name">The Scout</span>
+          <span class="card-price">£ 750</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="image5.jpg" alt="The Sovereign" />
+        </div>
+        <div class="card-info">
+          <span class="card-name">The Sovereign</span>
+          <span class="card-price">£ 820</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section-quote">
+    <div class="quote-inner">
+      <span class="quote-mark">"</span>
+      <p class="quote-text">
+        A shoe is not merely an object — it is the imprint of a man's
+        character upon the earth he walks.
+      </p>
+      <p class="quote-attr">— Henri Vancor, Founder, 1924</p>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <div class="footer-top">
+      <div class="footer-logo">Vancor</div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Collection</h4>
+          <ul>
+            <li><a href="#">The Oxford</a></li>
+            <li><a href="#">The Derby</a></li>
+            <li><a href="#">The Monk</a></li>
+            <li><a href="#">Bespoke</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Atelier</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Craftsmanship</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Archive</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="#">Florence</a></li>
+            <li><a href="#">London</a></li>
+            <li><a href="#">New York</a></li>
+            <li><a href="#"><span class="__cf_email__" data-cfemail="0a626f6666654a7c6b6469657824696567">[email&#160;protected]</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Vancor. All rights reserved.</span>
+      <span>Privacy · Terms · Cookies</span>
+      <script src="script.js"></script>
+    </body>
