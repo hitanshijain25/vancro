@@ -2,7 +2,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-
   const cursor     = document.querySelector('.cursor');
   const cursorRing = document.querySelector('.cursor-ring');
 
@@ -31,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
   });
 
- 
+
   const shoe     = document.getElementById('shoeWrap');
   const headline = document.querySelector('.headline');
   const arcSvg   = document.querySelector('.arc-svg');
@@ -55,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
- 
+
   const revealEls = document.querySelectorAll(
     '.section-label, .craft-heading, .craft-body, .craft-stat-row, ' +
     '.collection-title, .collection-link, .card, ' +
@@ -66,11 +65,14 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
 
-  revealEls.forEach(el => observer.observe(el));
+  revealEls.forEach(el => {
+    observer.observe(el);
+  });
 
  
   const craftImg = document.querySelector('.craft-image-col img');
@@ -88,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, { passive: true });
 
-
+ 
   const statNums = document.querySelectorAll('.stat-num');
 
   const counterObserver = new IntersectionObserver((entries) => {
@@ -118,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })(performance.now());
   }
 
-
+  
   const progressBar = document.createElement('div');
   progressBar.style.cssText = `
     position: fixed;
